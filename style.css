@@ -1,0 +1,58 @@
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.banner {
+    width: 100vw;
+    height: 400px;
+    position: relative;
+}
+
+.banner>div {
+    border-radius: 100%;
+    background-color: rebeccapurple;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: infiniteAnimation 2s infinite linear;
+}
+
+@keyframes infiniteAnimation {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+        background-color: rebeccapurple;
+    }
+
+    20% {
+        transform: translate(200px, 0) scale(1.5);
+        background-color: red;
+    }
+
+    40% {
+        transform: translate(200px, -100px) scale(2);
+        background-color: aquamarine;
+    }
+
+    60% {
+        transform: translate(-200px, -100px) scale(1.5);
+    }
+
+    80% {
+        transform: translate(-200px, 0) scale(1.25);
+    }
+}
